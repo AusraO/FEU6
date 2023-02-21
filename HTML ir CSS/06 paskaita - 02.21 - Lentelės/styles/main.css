@@ -1,4 +1,4 @@
-@import url('');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
 .pavyzdineLentele{
   border-collapse: collapse;
@@ -6,11 +6,23 @@
 }
 
 td, th{
-  border: 1px solid black;
+  border: 1px solid grey;
   /* border-width: 1px;
   border-style: solid;
   border-color: black; */
   padding: 3px 5px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+tr > :first-child{
+  color: blue;
 }
 
 .colorRed{
@@ -19,4 +31,22 @@ td, th{
 
 #id{
 
+}
+
+div.hihi.haha#idVardas{
+  color: white;
+  background-color: black;
+}
+
+.korteles > *{
+  overflow: hidden;
+  display: flex;
+  margin: 1px;
+  width: 300px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+input:checked ~ label{
+  color: red;
 }

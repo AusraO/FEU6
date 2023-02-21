@@ -1,0 +1,1 @@
+1) Sukurti lentelę, kuri pavaizduota ./images/simpleTableTask.png paveikslėlyje.

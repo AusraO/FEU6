@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lentelės</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./pages/about/about.html">AboutUs</a></li>
+      <li><a href="./pages/contact/contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <section id="lentele_HTML">
+      <div> <!-- lentelės tag'ų sąrašas -->
+        <h1>Lentelės tag'ai</h1>
+        <ul>
+          <li>table - lentelės tag'as</li>
+          <li>thead - lentelės viršus (table head) skirtas stulpelių pavadinimams</li>
+          <li>tbody - lentelės kūnas (table body) skirtas duomenims</li>
+          <li>tfoot - lentelės apačia (table foot) lentelės apibendrinimas</li>
+          <li>tr - lentelės eilutė (table row)</li>
+          <li>td - lentelės duomuo (table data)</li>
+          <li>th - lentelės stulpelio antraštė (table heading)</li>
+          <li>caption - lentelės pavadinimas</li>
+          <li>colgroup - stulpelių grupė</li>
+          <li>col - stulpelis</li>
+        </ul>
+      </div>
+      <div> <!-- pavyzdinė lentelė -->
+        <!-- <h1>Lentelė</h1> -->
+        <table class="pavyzdineLentele">
+          <caption>Lentelė</caption>
+          <colgroup>
+            <col>
+            <col span="2" style="color:red">
+            <col style="background-color:green">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="colorRed"></th>
+              <th class="colorRed">Vardas</th>
+              <th>Pavardė</th>
+              <th>Amžius</th>
+              <th>Vedęs/Ištekėjusi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3" class="colorRed">LT</th>
+              <td class="colorRed">Rokas</td>
+              <td>Banaitis</td>
+              <td>26</td>
+              <td rowspan="3">False</td>
+            </tr>
+            <tr>
+              <td class="colorRed">Petras</td>
+              <td>Petrauskas</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td class="colorRed">Jonas</td>
+              <td>Jonauskas</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="colorRed"></td>
+              <td class="colorRed" colspan="3">Amžių vidurkis</td>
+              <td>28.6</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

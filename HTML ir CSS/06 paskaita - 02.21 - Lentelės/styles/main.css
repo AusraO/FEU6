@@ -50,3 +50,17 @@ div.hihi.haha#idVardas{
 input:checked ~ label{
   color: red;
 }
+
+.task1{
+  background-color: rgb(255, 235, 235);
+  padding: 30px 0;
+}
+.task1 > h1{
+  margin-top: 0;
+  text-align: center;
+}
+
+.task1 > table{
+  margin: 0 auto;
+  width: 80%;
+}

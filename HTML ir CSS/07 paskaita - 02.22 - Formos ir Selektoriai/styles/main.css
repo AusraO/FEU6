@@ -1,0 +1,14 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+
+.pvzForma form > div{
+  margin-bottom: 5px;
+}
+
+.pvzForma textarea{
+  resize: none;
+}
+
+option:disabled{
+  display: none;
+}

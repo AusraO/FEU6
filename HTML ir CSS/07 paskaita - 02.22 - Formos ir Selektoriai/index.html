@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formos</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section> <!-- formos -->
+      <div> <!-- formų tag'ai -->
+        <h1>Formų tag'ai</h1>
+        <ul>
+          <li>form - forma</li>
+          <li>label - etiketė - naudojamas prie įvesties nurodyti įvesties laukelio pavadinimą</li>
+          <li>input - įvesties laukelis skirtas DAUG KAM (priklauso nuo type atributo reikšmės)</li>
+          <li>textarea - įvesties laukelis skirtas dideliam teksto kiekiui</li>
+          <li>select - įvesties laukas skirtas pasirinkti vienam iš pateiktų variantų</li>
+          <li>option - select'o pasirinkimo variantai</li>
+          <li>optgroup - option'ų grupės</li>
+          <li>output - formos išvesties vieta</li>
+        </ul>
+      </div>
+      <div> <!-- atributai -->
+        <h1>Formos elementų atributai</h1>
+        <ul>
+          <li>for - label atributas - nurodo kuriam įvesties laukui priskirta label'is</li>
+          <li>id - * atributas - sujungti label su įvesties lauku; įvesties lauko atpažinimui per JS</li>
+          <li>name - įvesties lauko atributas - skirtas atpažinti įvesties lauką</li>
+          <li>placeholder - įvesties lauko atributas - skirtas atvaizduoti pavyzdinę įvestį</li>
+          <li>rows/cols - textarea atributas - skirtas nurodyti textarea dydį (geriau naudoti CSS'ą)</li>
+          <li>label - optgroup atributas - skirtas nurodyti option'ų grupės pavadinimui</li>
+          <li>value - * atributas - nurodo įvesties reikšmę</li>
+          <li>selected - option atributas - nurodo automatiškai parinktą option'ą</li>
+          <li>type - input atributas - daug opcijų:
+            <ul>
+              <li>button - mygtukas (nenaudojamas)</li>
+              <li>color - spalva</li>
+              <li>date - metų|mėnesio|dienos</li>
+              <li>datetime-local - metų|mėnesio|dienos|valanda</li>
+              <li>email - reikalauja email formato</li>
+              <li>file - pasirinkti kompiuterio failą</li>
+              <li>hidden - paslepia input'ą (nenaudojamas)</li>
+              <li>image - formos pateikimo mygtukas paveiksliuko pavidalu (nenaudojamas)</li>
+              <li>month - metų|mėnesio</li>
+              <li>number - skaičius</li>
+              <li>password - slaptažodis, kurį maskuoja</li>
+              <li>range - slankiklis</li>
+              <li>reset - išvalo formą</li>
+              <li>search - paieškai skirtas laukas</li>
+              <li>submit - mygtukas formos pateikimui</li>
+              <li>tel - telefono</li>
+              <li>text - tekstas</li>
+              <li>time - valandų pasirinkimas</li>
+              <li>url - nuoroda</li>
+              <li>week - savaitės pasirinkimas</li>
+              <li>checkbox - daugelis pasirinkimų</li>
+              <li>radio - vienas pasirinkimas</li>
+            </ul>
+          </li>
+          <li>checked - radio|checkbox - nurodo automatiškai parinktą radio|checkbox</li>
+        </ul>
+      </div>
+      <div class="pvzForma"> <!-- formos pvz -->
+        <h1>Pavyzdinė forma</h1>
+        <form>
+          <input type="tel" value="+370">
+          <label for="">Pasirinkite mėgstamiausią spalvą</label>
+          <div>
+            <label for="blue">Mėlyna</label>
+            <input type="checkbox" name="color" id="blue" value="blue"><br>
+            <label for="red">Raudona</label>
+            <input type="checkbox" name="color" id="red" value="red"><br>
+            <label for="orange">Oranžinė</label>
+            <input type="checkbox" name="color" id="orange" value="orange" checked>
+            <label for="orange1">Oranžinė1</label>
+            <input type="checkbox" name="color" id="orange1" value="orange">
+            <label for="orange2">Oranžinė2</label>
+            <input type="checkbox" name="color" id="orange2" value="orange">
+            <label for="orange3">Oranžinė3</label>
+            <input type="checkbox" name="color" id="orange3" value="orange">
+          </div>
+          <div>
+            <label for="abc">Vardas:</label>
+            <input type="text" id="abc" name="abc" placeholder="Įveskite savo vardą">
+          </div>
+          <div>
+            <label for="">Pavardė:</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="">Papasakokite apie save:</label>
+            <textarea name="" id="" cols="50" rows="3"></textarea>
+          </div>
+          <div>
+            <label for="">Pasirinkite mėgstamiausią spalvą</label>
+            <select name="" id="">
+              <option value="" selected disabled></option>
+              <optgroup label="tamsios spalvos">
+                <option value="">Mėlyna</option>
+                <option value="">Purpurinė</option>
+                <option value="">Raudona</option>
+              </optgroup>
+              <optgroup label="šviesios spalvos">
+                <option value="">Žalia</option>
+                <option value="">Geltona</option>
+                <option value="">Oranžinė</option>
+              </optgroup>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

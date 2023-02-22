@@ -12,3 +12,56 @@
 option:disabled{
   display: none;
 }
+
+/* task2 */
+.task2{
+  margin: 0 auto;
+  width: 430px;
+}
+
+.task2 > form{
+  background-color: #74203f;
+  color: white;
+  padding: 20px 50px;
+}
+
+.task2 > form > div{
+  margin-bottom: 10px;
+}
+
+.task2 div > label:first-child{
+  width: 120px;
+  display: inline-block;
+}
+
+.task2 option:disabled{
+  display: none;
+}
+
+.task2 select{
+  font-size: 0.8rem;
+  padding: 3px 5px;
+  border: none;
+  width: 198px;
+}
+
+.task2 input{
+  border: none;
+  padding: 3px;
+}
+.task2 textarea{
+  width: 194px;  
+  border: none;
+}
+
+.task2 *[for='about']{
+  vertical-align: top;
+}
+
+.task2 input[type='submit']{
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -5,15 +5,15 @@
   border-spacing: 0;
 }
 
-td, th{
+/* td, th{
   border: 1px solid grey;
-  /* border-width: 1px;
+  border-width: 1px;
   border-style: solid;
-  border-color: black; */
+  border-color: black; 
   padding: 3px 5px;
-}
+} */
 
-table{
+.task1 > table{
   border-collapse: collapse;
 }
 
@@ -21,16 +21,12 @@ table{
   text-align: center;
 }
 
-tr > :first-child{
+.task1 tr > :first-child{
   color: blue;
 }
 
 .colorRed{
   color: red;
-}
-
-#id{
-
 }
 
 div.hihi.haha#idVardas{
@@ -63,4 +59,54 @@ input:checked ~ label{
 .task1 > table{
   margin: 0 auto;
   width: 80%;
+}
+
+.task2{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.task2 > h1{
+  margin-top: 0;
+}
+
+.task2 > table{
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 500px;
+}
+
+.task2 td{
+  border: 1px solid grey;
+  font-size: 0.7rem;
+}
+td.bigTdText{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.whiteBg{
+  background-color: white;
+  color: black;
+}
+.orangeBg{
+  background-color: orange;
+}
+.redBg{
+  background-color: red;
+}
+.blueBg{
+  background-color: blue;
+}
+
+.task2 tr > :first-child{
+  text-align: left;
+}
+
+.task2 button{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
 }

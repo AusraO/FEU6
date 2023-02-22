@@ -1,3 +1,4 @@
 1) Galite peržiūrėti CAO informaciją ir galbūt atlikti užduotį.
 2) Pabandyti atkurti kuo panašesnę formą į ./images/simpleForm.PNG
 3+) Pabandyti atkurti kuo panašesnę formą į ./images/form1.png
+4++) Pabandyti atkartoti kuo panašesnę formą į ./images/form.png

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Displays, Colors, Positions, Selectors</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section> <!-- Displays -->
+      <h1>Displays</h1>
+      <ul>
+        <li>inline</li>
+        <li>block</li>
+        <li>inline-block</li>
+      </ul>
+      <div>
+        <h3>Inline</h3>
+        <p>
+          Elementai išsidėsto toje pačioje eilutėje, bet negali turėti pločio ir aukščio nustatymų. Jų dydis priklauso nuo turinio.
+        </p>
+        <div>
+          <div class="kvadratas inline">1 inline</div>
+          <div class="kvadratas inline">2 inline</div>
+          <div class="kvadratas inline">3 inline</div>
+          <div class="kvadratas inline">4 inline</div>
+        </div>
+      </div>
+      <div>
+        <h3>Block</h3>
+        <p>
+          Elementai išsidėsto atskirose eilutėse. Gali priimti pločio ir aukščio nustatymus. Jeigu pločio ir aukščio nustatymai nenurodyti - turinys kontroliuoja elemento aukštį.
+        </p>
+        <div>
+          <div class="kvadratas block">1 block</div>
+          <div class="kvadratas block">2 block</div>
+          <div class="kvadratas block">3 block</div>
+          <div class="kvadratas block">4 block</div>
+        </div>
+      </div>
+      <div>
+        <h3>Inline-Block</h3>
+        <p>
+          Elementai išsidėsto vienas šalia kito. Gali priimti pločio ir aukščio nustatymus. Nesutaikus pločio nustatymo - elementas neužima viso galimo pločio.
+        </p> <!-- SHIFT ALT F - automatinis tabuliavimas -->
+        <div>
+          <div class="kvadratas inline-block">1 inline-block</div><!--
+          --><div class="kvadratas inline-block">2 inline-block</div> <!-- white space -->
+          <div class="kvadratas inline-block">3 inline-block</div> <!-- white space -->
+          <div class="kvadratas inline-block">4 inline-block</div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- Colors -->
+      <h1>Colors</h1>
+      <ul>
+        <li>color name - 140 skirtingų spalvų</li>
+        <li>rgb - red green blue - 0-255(drops/lašai) - 256^3</li>
+        <li>hex|# - hexidecimal (šešioliktainis) - 00-ff - 256^3</li>
+        <li>hsl</li>
+        <li>hwb</li>
+      </ul>
+      <div>
+        <h3>Color names</h3>
+        <p>
+          Užvadintų spalvų yra ~140. Norint pritaikyti spalvą - reikia nurodyti jos pavadinimą. Pvz.: color: orange|black|khaki|dimGray...;
+        </p>
+      </div>
+      <div>
+        <h3>RBG(a) (red green blue)(alpha)</h3>
+        <p>
+          Naudojant RGB kodą, kiekviena spalva susideda iš 3 pagrindinių spalvų mišinio. Vienos spalvos kiekis nurodomas skaičiumi nuo 0 (nėra) iki 255(max). Pvz.: color: rgb(0, 255, 0)|rgb(50, 189, 255);
+        </p>
+        <p>
+          rgbA - red green blue ALPHA. Alpha nurodo spalvos permatomumą, priskiriant skaičių nuo 0 iki 1, 0.001 žingsniu. 0 - spalva pilnai permatoma (nematoma), 1 - spava pilnai matoma (tarsi nebūtų jokio alpha nustatymo). Pvz.: rgba(0, 255, 0, 0.501)|rgba(50, 189, 255, 0)
+        </p>
+      </div>
+      <div>
+        <h3>Hex kodas (#)</h3>
+        <p>
+          Naudojant Hex kodą, kiekviena spalva susideda iš 3 pagrindinių spalvų mišinio. Vienos spalvos kiekis nurodomas išraiška nuo 00 iki ff. Pvz.: color: #00ff00 | #32bdff;
+        </p>
+        <p>
+          Norint nurodyti spalvos permatomumą naudojant hex spalvos pavidalą, gale reikia nurodyti 2 papildomus simbolius (1 hexdecimal išraišką). 00 - visiškai permatoma, ff - pilnai matoma. Pvz.: color: #00ff0080 | #32bdff00;
+        </p>
+        <p>
+          Hex kodą galima trumpinti nurodant dvigubai mažiau simbolių. Trumpinimas galimas tik tuomet, jeigu yra du vienodi simboliai iš eilės - juos galima trumpinti į vieną simbolį. Pvz.: color: #0f0 (vietoj #00ff00) | #3bf (beveik vietoj #32bdff);
+        </p>
+        <p>
+          Kaip veikia Hex?
+          00 - 0; 01 - 1; 02 - 2; 09 - 9; 0a - 10; 0b - 11; 0c - 12; 0d - 13; 0e - 14; 0f - 15; 10 - 16; 11 - 17;... 19 - 25; 1a - 26;... 1f - 31; 20 - 32; 9f - ???; a0...... ff - 255;
+        </p>
+      </div>
+      <h2>Gradient</h2>
+      <ul>
+        <li>Linear</li>
+        <li>Radial</li>
+        <li>Conic</li>
+        <li>repeating...</li>
+      </ul>
+      <p>
+        Norint naudoti spalvų gradientus, reikia pasirinkti spalvos stilių ir jo nustatymuose nurodyti, kad naudojamas kažkuris gradientas. Pvz.: background-color: linear-gradient(nustatymai);
+      </p>
+      <p>
+        Nustatymai susideda minimum iš 3 dalių: kur prasideda gradiento piešimas | į kurią pusę piešimas vyksta; spalva1; spalva2;
+      </p>
+      <p>
+        Nurodant spalvas, galima nurodyti % reikšmę kiek vietos jie užims.
+      </p>
+    </section>
+    <section> <!-- Positions -->
+
+    </section>
+    <section> <!-- Selectors -->
+
+    </section>
+  </main>
+</body>
+</html>

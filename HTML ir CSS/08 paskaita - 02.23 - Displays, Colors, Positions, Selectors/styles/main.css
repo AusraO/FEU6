@@ -24,3 +24,49 @@
 .inline-block{
   display: inline-block;
 }
+
+.task1{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.veliava{
+  width: 500px;
+  height: 280px;
+  font-size: 0;
+  border: 3px solid black;
+}
+
+.veliava.lt > div{
+  width: 100%;
+  height: calc(100% / 3);
+}
+.veliava.fr > div{
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.yellowBg{
+  background-color: yellow;
+}
+.greenBg{
+  background-color: green;
+}
+.redBg{
+  background-color: red;
+}
+.whiteBg{
+  background-color: white;
+}
+.blueBg{
+  background-color: blue;
+}
+.veliava.be{
+  background-image: linear-gradient(
+    to right,
+    black 33%,
+    orange 33% 67%,
+    red 67%
+  );
+}

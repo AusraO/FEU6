@@ -1,5 +1,9 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
+.hide{
+  display: none;
+}
+
 .kvadratas{
   width: 100px;
   height: 100px;
@@ -69,4 +73,67 @@
     orange 33% 67%,
     red 67%
   );
+}
+
+.static{
+  position: static;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}
+
+.top20{
+  top: 20px;
+}
+.right50{
+  right: 50px;
+}
+.bottom10{
+  bottom: 10px;
+}
+.left30{
+  left: 30px;
+}
+
+.z-index{
+  z-index: 1;
+}
+
+.tallDiv{
+  height: 200px;
+  border: 1px solid #000;
+}
+
+header{
+  background-color: grey;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+header > div.pageLinks{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
+div.pageLinks > a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+
+div.pageLinks > a:hover{
+  color: green;
 }

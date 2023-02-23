@@ -8,8 +8,19 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <header>
+    <!-- <div>logo</div>
+    <div>menuLinks</div>
+    <div>userInfo</div> -->
+    <div class="pageLinks">
+      <a href="#displays">Displays</a>
+      <a href="#colors">Colors</a>
+      <a href="#positions">Positions</a>
+      <a href="#uzduotys">Užduotys</a>
+    </div>
+  </header>
   <main>
-    <section> <!-- Displays -->
+    <section id="displays" class=""> <!-- Displays -->
       <h1>Displays</h1>
       <ul>
         <li>inline</li>
@@ -53,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section> <!-- Colors -->
+    <section id="colors" class=""> <!-- Colors -->
       <h1>Colors</h1>
       <ul>
         <li>color name - 140 skirtingų spalvų</li>
@@ -110,13 +121,83 @@
         Nurodant spalvas, galima nurodyti % reikšmę kiek vietos jie užims.
       </p>
     </section>
-    <section> <!-- Positions -->
+    <section id="positions"> <!-- Positions -->
+      <h1>Positions</h1>
+      <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+      </ul>
+      <p>
+        Nustačius betkurią apart static poziciją, elementui galime suteikti: top, right, bottom, left ir z-index stilius.
+      </p>
+      <div>
+        <h2>Static</h2>
+        <p>
+          Static pozicija yra default'inė pozicija visų elementų. Dėl to ji nieko nedaro, net nesuteikia galimybės naudotis top, right, bottom, left ir z-index stiliais.
+        </p>
+        <div>
+          <div class="kvadratas inline-block static">Static 1</div>
+          <div class="kvadratas inline-block static top20 right50">Static 2</div>
+          <div class="kvadratas inline-block static">Static 3</div>
+          <div class="kvadratas inline-block static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h2>Relative</h2>
+        <p>
+          Relative pozicija suteikia elementui galimybę naudotis top, right, bottom, left ir z-index stiliais. Relatyviosios pozicijos top, right, bottom ir left nustatymai pastumia elementą per nurodytą atstumą, nuo nurodytos kraštinės, nuo elemento pradinės prozicijos. Elementas turintis relative poziciją yra jo viduje esančio elemento, su absoliučiąją pozicija, riba.
+        </p>
+        <div>
+          <div class="kvadratas inline-block static">Static 1</div>
+          <div class="kvadratas inline-block static top20">Static 2</div>
+          <div class="kvadratas inline-block relative top20 z-index">Relative 3</div>
+          <div class="kvadratas inline-block relative right50">Relative 4</div>
+        </div>
+      </div>
+      <div class="relative">
+        <h2>Absolute</h2>
+        <p>
+          Elementas turintis absoliučiąją poziciją - išeina iš puslapio tėkmės (netenka savo pozicijos elementų išdėstymo eilėje). Suteikia galimybę naudotis top, right, bottom, left ir z-index stiliais. Absoliučios pozicijos top, right, bottom ir left nustatymai, pastumia elementą nuo jo protėvinio elemento kraštų, jei šis turi relatyviąją poziciją.
+        </p>
+        <div>
+          <div class="kvadratas inline-block static">Static 1</div>
+          <div class="kvadratas inline-block absolute left30 top20">Absolute 2</div>
+          <div class="kvadratas inline-block static">Static 3</div>
+          <div class="kvadratas inline-block static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h2>Fixed</h2>
+        <p>
+          Elementas turintis fiksuotą poziciją - išeina iš puslapio tėkmės (netenka savo pozicijos elementų išdėstymo eilėje). Jis fiksuojasi nurodytoje pozicijoje ir scroll'inant puslapiu, juda kartu. Fiksuotos pozicijos top, right, bottom ir left nustatymai nurodo kur elementas bus prilipęs ekrane.
+        </p>
+        <div>
+          <div class="kvadratas inline-block fixed right50 bottom10">Fixed 1</div>
+          <div class="kvadratas inline-block static">Static 2</div>
+          <div class="kvadratas inline-block static">Static 3</div>
+          <div class="kvadratas inline-block static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h2>Sticky</h2>
+        <p>
+          Sticky pozicija suteikia elementui galimybę naudotis top, right, bottom, left ir z-index stiliais. Nustatymai top, right, bottom ir left, nurodo per kokį atstumą sticky elementas turi prilipti nuo ekrano kraštinių ir judėti kartu (kol nėra išeinama iš sticky elemento tėvinio elemento ribų).
+        </p>
+        <div class="tallDiv">
+          <div class="kvadratas inline-block static">Static 1</div>
+          <div class="kvadratas inline-block sticky top20">Sticky 2</div>
+          <div class="kvadratas inline-block static">Static 3</div>
+          <div class="kvadratas inline-block static">Static 4</div>
+        </div>
+      </div>
+    </section>
+    <section id="selectors" class="hide"> <!-- Selectors -->
 
     </section>
-    <section> <!-- Selectors -->
-
-    </section>
-    <section> <!-- užduotys -->
+    <section id="uzduotys" class=""> <!-- užduotys -->
       <div class="task1"> <!-- task1 -->
         <div>
           <h1>LT</h1>

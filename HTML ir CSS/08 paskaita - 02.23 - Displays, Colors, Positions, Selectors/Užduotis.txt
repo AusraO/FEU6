@@ -1,2 +1,4 @@
 1) Sukurti 5 skirtingų šalių vėliavas. Naudojant inline-block/block nustatymą/us.
 1+) Pabandyti sukurti vieną ar kelias vėliavas naudojant gradient'ą/us.
+2) Padaryti taip, kad naviguojant su menu po puslapį, nebūtų užstojama turinio pradžia.
+Galbūt padaryti taip, kad naviguojant su menu po puslapį, nebūtų akimirksniu nušokama į norima vietą, o nuslenkama.

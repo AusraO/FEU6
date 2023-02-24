@@ -1,5 +1,9 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hide{
   display: none;
 }
@@ -137,3 +141,14 @@ div.pageLinks > a{
 div.pageLinks > a:hover{
   color: green;
 }
+section[id]{
+  scroll-margin-top: 50px;
+}
+
+/* section{
+  position: relative;
+}
+div.menuHelper{
+  position: absolute;
+  top: -50px;
+} */

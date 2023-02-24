@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#flex">Flex</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#bgImages">BgImages</a></li>
+        <li><a href="#selectors">Selectors</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section id="flex"> <!-- flex -->
       <h1>Display Flex</h1>
@@ -59,14 +68,39 @@
         <div class="kvadratas">12</div>
       </div>
     </section>
-    <section> <!-- grid -->
-
+    <section id="grid"> <!-- grid -->
+      :(
     </section>
-    <section> <!-- bg images -->
-
+    <section id="bgImages"> <!-- bg images -->
+      <h1>Background images</h1>
+      <div>
+        <div class="fonas1">
+          <h2>background-image</h2>
+          <ul>
+            <li>background-image: url('nuoroda/kelias');</li>
+            <li>background-size: cover | contain;</li>
+            <li>background-position: top | right | bottom | left | center;</li>
+            <li>background-repeat: repeat | no-repeat | ... ;</li>
+            <li>background-attachment: fixed | local | scroll;</li>
+            <li>background-clip: text | border-box | padding-box | content-box;</li>
+          </ul>
+        </div>
+        <div class="fonas2">
+          <img src="./images/nature7.jpg" alt="bgImage">
+          <div class="z_index">
+            <h2>img ir positions</h2>
+            <p>
+              Div'e susikuriame img tag'ą, kuriam suteikiame absoliučiąją poziciją, negativų z-index'ą ir plotį bei aukštį padarome po 100%; 
+            </p>
+            <p>
+              Div'ui suteikiame norimą aukštį ir relatyviąją poziciją. Suteikiame div'ui dalinai permatomą spalvos foną.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section> <!-- selectors maybe -->
-
+    <section id="selectors"> <!-- selectors maybe -->
+      <div class="tallEmpty"></div>
     </section>
   </main>
 </body>

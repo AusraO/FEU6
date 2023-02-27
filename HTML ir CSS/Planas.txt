@@ -1,0 +1,23 @@
+02.27 (Pirmadienis)
+  Grid
+
+02.28 (Antradienis)
+  Grid ir Flex praktika
+
+03.01 (Trečiadienis)
+  Selectors, Transition, Animation, Ikonos
+
+03.02 (Ketvirtadienis)
+  Responsiveness, MobileFirst
+
+03.03 (Penktadienis)
+  Praktika
+
+03.06 (Pirmadienis)
+  FrameWorks; CSS Preprocessors
+
+03.07 (Antradienis)
+  Praktika????/HTML atsiskaitymas
+
+03.08 (Trečiadienis)
+  HTML atsiskaitymas/JS Įvadas

@@ -118,3 +118,52 @@ header ul > li > a:hover{
 section[id]{
   scroll-margin-top: 50px;
 }
+
+/* task2 */
+#task2{
+  margin-bottom: 50px;
+}
+
+#task2 > div{
+  width: 1200px;
+  height: 620px;
+  display: flex;
+  gap: 20px;
+  background-color: #00253f;
+  margin: 0 auto;
+  color: white;
+}
+
+.speakersText{
+  padding-left: 50px;
+  flex: 3;
+}
+.speakersText > h1{
+  margin-top: 100px;
+  font-size: 4.5rem;
+  color: #83cfbd;
+  margin-bottom: 0;
+}
+.speakersText > p{
+  font-size: 1.5rem;
+}
+
+.speakersPeople{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.speakersPeople *{
+  margin: 0;
+}
+.speakersPeople > img{
+  height: 85%;
+}
+.speakersPeople > .speakerPhoto3{
+  height: 85%;
+  background-image: url('../images/speaker3.PNG');
+  background-size: cover;
+  background-position: center;
+}

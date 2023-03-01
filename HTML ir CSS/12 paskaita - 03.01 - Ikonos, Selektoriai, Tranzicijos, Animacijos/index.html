@@ -26,7 +26,8 @@
     <section id="selektoriai">
       <h1>Selektoriai</h1>
       <ul>
-        <li>Paprasti:</li>
+        <li>Paprasti:
+        </li>
         <ul>
           <li>element - elemento - pvz.: p</li>
           <li>class - klasės - pvz.: .className</li>
@@ -59,10 +60,75 @@
           <li>parinktas::placeholder - parinktų formos įvesčių placeholder atributo tekstai</li>
           <li>parinktas::selection - parinktame elemente žymimo turinio stiliai</li>
         </ul>
-        
+        <li>Eiliškumo:</li>
+        <ul>
+          <li>:first-of-type - parenka pirmą kažkokio tipo elementą grupėje - pvz.: div>p:first-of-type</li>
+          <li>:first-child - parenka pirmą vaikinį elementą - pvz.: div>p:first-child</li>
+          <li>:last-of-type - parenka paskutinį kažkokio tipo elementą grupėje</li>
+          <li>:last-child - parenka paskutinį vaikinį elementą</li>
+          <li>:only-of-type - parenka elementą jeigu jis grupėje vienintelis savo tipo elementas</li>
+          <li>:only-child - parenka vaikinį elementą, jeigu jis vienintelis vaikinis elementas grupėje</li>
+          <li>:nth-child() - parenka kažkelintą/kas kažkelintą vaikinį elementą</li>
+          <li>:nth-of-type() - parenka kažkelintą/kas kažkelintą elementą pagal tipą</li>
+          <li>:nth-last-child() - nuo galo parenka kažkelintą/kas kažkelintą vaikinį elementą</li>
+          <li>:nth-last-of-type() - nuo galo parenka kažkelintą/kas kažkelintą elementą pagal tipą</li>
+        </ul>
+        <li>Nuorodų:</li>
+        <ul>
+          <li>:link - nelankyta nuoroda</li>
+          <li>:visited - lankyta nuoroda</li>
+          <li>:active - nuoroda paspaudimo metu</li>
+          <li>:hover - pelė ant elemento</li>
+        </ul>
+        <li>Formų:</li>
+        <ul>
+          <li>:checked - pažymėtas radio/checkbox</li>
+          <li>:default - įprastas input'o pavidalas</li>
+          <li>:disabled - input'as su disabled atributu</li>
+          <li>:enabled - input'as be disabled atributo</li>
+          <li>:focus - input'as kuriame dabar yra kursorius</li>
+          <li>:in-range - input'as, kurio įvestis yra nurodytose ribose</li>
+          <li>:out-of-range - input'as, kurio įvestis yra už nurodytų ribų</li>
+          <li>:valid - input'as su teisinga įvestimi</li>
+          <li>:invalid - input'as su neteisinga įvestimi</li>
+          <li>:indeterminate - neapibrėžta input'o reikšmė</li>
+          <li>:optional - input'as be required atributo</li>
+          <li>:required - input'as su required atributu</li>
+          <li>:read-only - input'as su readonly atributu</li>
+          <li>:read-write - input'as be readonly atributo</li>
+        </ul>
+        <li>Like selektoriai:</li>
+        <ul>
+          <li>:fullscreen - parenka elementą, kuris yra pilno ekrano rėžime</li>
+          <li>:lang(language) - parenka elementą, kuris turi nurodytos kalbos lang atributą</li>
+          <li>:not(selector) - suteikia stilių visiems elementas parinktoje dalyje, apart nurodytam not'o viduje</li>
+          <li>:root - html'o šakninis elementas</li>
+          <li>:target - elementas į kurį nukėlė navigacija</li>
+          <li>:empty - elementas neturintis NIEKO savo viduje</li>
+        </ul>
       </ul>
       <input type="text" placeholder="haha labas kaip sekas?">
       <input type="number" placeholder="654...">
+      <div class="sitas">
+        <h1>antraštė</h1>
+        <h1>antraštė du</h1>
+        <h1>antraštė 3</h1>
+        <div>
+          <h4>2</h4>
+          <h4>3</h4>
+          <h4>4</h4>
+          <h4>5</h4>
+        </div>
+        <p>pirmas</p>
+        <p>haha <a>pirmas</a> haha <a>antras</a></p>
+        <p>haha <a>pirmas</a> haha <a>antras</a></p>
+        <p>haha <a>pirmas</a> haha <a>antras</a></p>
+        <p>pirmas3</p>
+        <p>antras</p>
+        <h2>heading2.1</h2>
+        <h2>heading2.2</h2>
+        <h2>heading2.3</h2>
+      </div>
     </section>
   </main>
 </body>

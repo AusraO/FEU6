@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikonos, Selektoriai, Tranzicijos, Animacijos</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section id="ikonos">
+      <h1>Ikonos</h1>
+      <p>
+        Ikonos savo tag'o neturi. Jos naudoja kitus tekstinius tag'us ir priskirdamos jiems klases, būna atvaizduojamos. Dažniausiai naudojami tag'ai yra: i (italic) ir span.<br>
+        Norint naudoti ikonas, reikia prijungti vieną iš daugelio ikonų bibliotekų prie savo svetainės. Galimos bibliotekos: FontAwesome, Bootstrap, Google, MUI, Ant-Design, Tailwind, Bulma...
+      </p>
+      <i class="bi bi-bag-check-fill"></i>
+      <span class="bi bi-bag-check-fill"></span>
+      <p>
+        Norint stilizuoti ikonas, jas stilizuojame <i class="bi bi-bag-check-fill"></i> kaip tekstinius elementus. Spalva: color; Dydis: font-size; Fonas: background-color;
+      </p>
+    </section>
+    <section id="selektoriai">
+      <h1>Selektoriai</h1>
+      <ul>
+        <li>Paprasti:</li>
+        <ul>
+          <li>element - elemento - pvz.: p</li>
+          <li>class - klasės - pvz.: .className</li>
+          <li>id - id - pvz.: #ID_Name</li>
+          <li>everything - visko - pvz.: *</li>
+          <li>multiple - daugelio elementų - pvz.: div, .pavadinimas</li>
+          <li>inside - elementai elemento viduje - pvz.: div p</li>
+          <li>children - vaikiniai elemento elementai - pvz.: div > p</li>
+          <li>element with class/id - elementas su klase/id arba klasėmis/id - pvz.: div.hihi.haha#idVardas</li>
+          <li>next element - elementas einantis už elemento - pvz.: input + label</li>
+          <li>next elements - elementai einantys už elemento - pvz.: input ~ label</li>
+        </ul>
+        <li>Atributai:</li>
+        <ul>
+          <li>[attribute] - renkasi elementą turintį nurodytą atributą - pvz.: [class]</li>
+          <li>[attribute='reikšmė'] - renkasi elementą turintį nurodytą atributą su specifine reikšme - [class="bi"]</li>
+          <li>[attribute~='reikšmė'] - renkasi elementą turintį nurodytą atributą, kur viena iš reikšmių yra nurodyta reikšmė - pvz.: [class~='bi'] </li>
+          <li>[attribute|='reikšmė'] - renkasi elementą turintį nurodytą atributą, kur už reikšmės padėtas brukšnelis ir extra tekstas -  pvz.: [class|='bi']</li>
+          <li>[attribute^='reikšmė'] - renkasi elementą turintį nurodytą atributą, kur reikšmė prasideda nurodyta reikšme - pvz.: [href^='https://']</li>
+          <li>[attribute$='reikšmė'] - renkasi elementą turintį nurodytą atributą, kur reikšmė pasibaigia nurodyta reikšme - pvz.: [src$='.png']</li>
+          <li>[attribute*='simboliuSeka'] - renkasi elementą turintį nurodytą atributą, kur reikšmėje yra nurodyta simbolių seka - pvz.: [alt*='pav']</li>
+        </ul>
+        <li>Pseudo Elementai:</li>
+        <ul>
+          <li>parinktas::before - nurodo virtualų elementą prieš parinktą elementą</li>
+          <li>parinktas::after - nurodo virtualų elementą už parinkto elemento</li>
+          <li>parinktas::first-line - nurodo pirmąją eilutę parinkto elemento</li>
+          <li>parinktas::first-letter - nurodo iki pirmosios raidės parinkto elemento</li>
+          <li>parinktas::marker - parinktų sąrašo elementų žymės</li>
+          <li>parinktas::placeholder - parinktų formos įvesčių placeholder atributo tekstai</li>
+          <li>parinktas::selection - parinktame elemente žymimo turinio stiliai</li>
+        </ul>
+        
+      </ul>
+      <input type="text" placeholder="haha labas kaip sekas?">
+      <input type="number" placeholder="654...">
+    </section>
+  </main>
+</body>
+</html>

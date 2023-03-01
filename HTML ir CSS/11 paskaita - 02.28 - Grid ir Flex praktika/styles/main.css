@@ -24,3 +24,85 @@ main > section{
   padding: 10px 100px;
   background-color: aquamarine;
 }
+/* task1 Latest Posts */
+.post{
+  display: flex;
+  gap: 15px;
+}
+.postDate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  /* font-weight: 500; */
+}
+.postInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postInfo > *{
+  margin: 0;
+}
+
+/* task 3 overlap */
+.gridOverlap{
+  width: 630px;
+  height: 460px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.gridOverlap > div{
+  background-position: center;
+  background-size: cover;
+}
+.firstImage{
+  background-image: url('../images/bug\ Debug.jpg');
+  grid-area: 2 / 1 / 4 / 4;
+  z-index: 1;
+}
+.secondImage{
+  background-image: url('../images/fontEnd_vs_backEnd.jpg');
+  grid-area: 1 / 2 / 3 / 5;
+}
+.thirdImage{
+  background-image: url('../images/js.jpg');
+  grid-area: 3 / 3 / 5 / 6;
+}
+
+/* transparent text card */
+
+.card{
+  height: 500px;
+  width: 500px;
+  background-image: url('../images/fontEnd_vs_backEnd.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+.textBox{
+  background-color: rgba(0, 0, 0, 0.504);
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  /* right: 0;
+  left: 0; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.textBox > *{
+  margin: 0;
+}

@@ -1,0 +1,1 @@
+1) Sukurti mygtuką, ant kurio užėjus su pele(kursoriumi), per labai mažą laiko tarpą pasikeistų jo fono ir teksto spalva (gal vos vos padidėtų).

@@ -5,10 +5,10 @@
   Grid ir Flex praktika
 
 03.01 (Trečiadienis)
-  Selectors, Transition, Animation, Ikonos
+  Selectors, Ikonos
 
 03.02 (Ketvirtadienis)
-  Responsiveness, MobileFirst
+  Transition, Animation, Responsiveness, MobileFirst
 
 03.03 (Penktadienis)
   Praktika

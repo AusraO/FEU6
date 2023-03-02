@@ -1,42 +1,84 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
-*[class*='bi']{
+*[class*='bi'] {
   color: red;
   background-color: blue;
   font-size: 50px;
   padding: 10px;
 }
 
-li::before{
-  content:":)";
+li::before {
+  content: ":)";
   color: red;
   font-size: 20px;
 }
-li::after{
-  content:':(';
+
+li::after {
+  content: ':(';
   color: blue;
   font-size: 5px;
 }
+
 /* li::first-line{
   background-color: beige;
 } */
-li::first-letter{
+li::first-letter {
   font-size: 25px;
 }
-li::marker{
+
+li::marker {
   color: green;
 }
-input::placeholder{
+
+input::placeholder {
   color: orange;
   font-size: 30px;
   padding-left: 30px;
 }
-li::selection{
+
+li::selection {
   color: yellow;
   background-color: black;
 }
 
-li:nth-child(2n){
+li:nth-child(2n) {
   background-color: antiquewhite;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+}
+
+th,td {
+  border: 1px solid black;
+  width: 100px;
+  position: relative;
+}
+
+th:hover,td:hover {
+  background-color: aquamarine;
+  color: red;
+}
+
+tr:hover {
+  background-color: black;
+  color: orange;
+}
+
+table{
+  overflow: hidden;
+}
+
+td:hover::after, th:hover::after {
+  content: '';
+  background-color: #ffa;
+  color: blue;
+  position: absolute;
+  top: -5000px;
+  height: 10000px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
 }

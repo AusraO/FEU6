@@ -50,7 +50,7 @@ div.helperTall{
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: betkoks; */
-  animation: 10s linear 0s infinite alternate none running betkoks;
+  animation: 10s linear 0s infinite alternate none paused betkoks;
 }
 .animationPvz > div:nth-child(1):hover{
   animation-play-state: paused;
@@ -71,5 +71,66 @@ div.helperTall{
     background-color: orange;
     transform: translate(100px, 0px);
     border-radius: 50%;
+  }
+}
+
+div.animationPvz > img:nth-child(2){
+  height: 200px;
+  width: auto;
+  transform: translateX(500px);
+  animation: 5s alternate infinite levitate ease-in-out;
+}
+@keyframes levitate{
+  0% {
+    transform: translate(500px, 20px);
+  } 100% {
+    transform: translate(500px, -20px);
+  }
+}
+
+
+
+body{
+  background-color: aquamarine;
+  color: red;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+header div{
+  display: none;
+}
+
+@media (min-width: 678px){
+  body{
+    background-color: blanchedalmond;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header div{
+    display: unset;
+  }
+}
+
+@media (min-width: 992px){
+  body{
+    color: green;
+  }
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header ul{
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px){
+  header{
+    padding: 0 100px;
   }
 }

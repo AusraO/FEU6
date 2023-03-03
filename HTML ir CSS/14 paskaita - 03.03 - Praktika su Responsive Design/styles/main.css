@@ -66,18 +66,18 @@ div[class^='photoAndStuff']{
     grid-area: 2 / 1 / -2 / 2;
   }
   .header{
-    /* grid-area: kitokie nustatymai; */
+    grid-area: 1 / 1 / 2 / 5;
   }
   .hero{
-    /* grid-area: kitokie nustatymai; */
+    grid-area: 2 / 1 / 3 / 5;
   }
   .about1{
-    /* grid-area: kitokie nustatymai; */
+    grid-area: 3 / 2 / 4 / 5;
   }
   .about2{
-    /* grid-area: kitokie nustatymai; */
+    grid-area: 4 / 2 / 5 / 5;
   }
   .footer{
-    /* grid-area: kitokie nustatymai; */
+    grid-area: -2 / 1 / -1 / -1;
   }
 }

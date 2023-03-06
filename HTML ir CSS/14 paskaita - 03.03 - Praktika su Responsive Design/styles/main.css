@@ -81,3 +81,17 @@ div[class^='photoAndStuff']{
     grid-area: -2 / 1 / -1 / -1;
   }
 }
+
+#imgPvz{
+  height: 500px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#imgPvz img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover
+}

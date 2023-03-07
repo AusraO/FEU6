@@ -1,0 +1,42 @@
+.kortele{
+  position: relative;
+  height: 500px;
+  width: 300px;
+  border: 3px solid black;
+}
+
+.kortele > img{
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+
+.kortele > span.date{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: aquamarine;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div.nuorodos{
+  display: none;   
+}
+
+#hero{
+  background-color: blueviolet;
+}
+
+@media (min-width:700px){
+  header > div.nuorodos{
+    display: unset;
+    /* .... */
+  }
+  #hero{
+    background-image: linear-gradient() url();
+  }
+}

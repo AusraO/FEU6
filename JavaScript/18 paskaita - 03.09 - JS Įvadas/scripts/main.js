@@ -47,7 +47,7 @@ console.log(ardabarvasara);
 // window.alert('laikas pertraukai!!!');
 // let vartotojoReiksme = window.prompt('Ar vėluojame į pertrauką?');
 
-/*        Aritmetika
+/*        Aritmetika (operatoriai)
     Veiksmai su duomenimis (pgr. kintamaisiais)
 
     +       - sudėtis (sum/addition)
@@ -57,7 +57,6 @@ console.log(ardabarvasara);
     **      - kėlimas laipsniu (power)
     **(1/x) - šaknies traukimas (root) (x - šaknies laipsnis)
     %       - liekanos radimas (remainder)
-
 
     Visi aritmetiniai veiksmai apart sudėties atliekami tik su skaičiais.
 
@@ -70,7 +69,7 @@ let neSkaicius = '5';
 let zodis = 'haha hihi';
 let tiesa = true;
 
-console.group('aritmetika');
+console.groupCollapsed('aritmetika');
 console.log('5 + 9 =', sk1 + sk2);
 console.log('5 - 9 =', sk1 - sk2);
 console.log('5 * 9 =', sk1 * sk2);
@@ -82,4 +81,71 @@ console.log('hihi haha + 9 =',zodis+sk2);
 console.log('hihi haha * 9 =',zodis*sk2); // NaN (Not a Number)
 console.log("'5' + 9 =",neSkaicius+sk2);
 console.log("'5' * 9 =",neSkaicius*sk2); // 45
+console.groupEnd();
+
+/*        Prilyginimas ir palyginimas
+
+        Prilyginimas
+
+    Naujos reikšmės prilyginimas:
+      let kintamasis = 'labas vakaras';
+      kintamasis = 50;
+
+    Trumpiniai:
+      += - didininimas per nurodytą skaičių
+      -= - mažinimas per nurodytą skaičių
+      *= - dauginimas per nurodytą skaičių
+      /= - dalinimas per nurodytą skaičių
+      **= - laipsnio kėlimas per nurodytą skaičių
+      %= - liekanos radimas per nurodytą skaičių
+
+    Palyginimai:
+      > - daugiau
+      < - mažiau
+      >= - daugiau arba lygu
+      <= - mažiau arba lygu
+      == - ar lygios duomenų reikšmės
+      === - ar lygios duomenų reikšmės IR duomenų tipai
+      != - ar nelygios duomenų reiškmės
+      !== - ar nelygios duomenų reikšmės IR duomenų tipai
+*/
+
+console.groupCollapsed('Prilyginimas');
+let kintamasis = 'labas vakaras';
+console.log(kintamasis); // labas vakaras
+kintamasis = 50;
+console.log(kintamasis); // 50
+
+kintamasis = kintamasis+1; // 50 + 1
+console.log(kintamasis); // 51
+
+kintamasis = kintamasis+sk2; // 51 + 9
+console.log(kintamasis); // 60
+
+kintamasis = kintamasis - 3; // 60 - 3
+console.log(kintamasis); // 57
+
+kintamasis += 100; // kintamasis = kintamasis + 100
+console.log(kintamasis); // 157
+
+kintamasis -= 50; // kintamasis = kintamasis - 50
+console.log(kintamasis); // 107
+
+kintamasis **= 1/3;
+console.log(kintamasis); // 4.74...
+console.groupEnd();
+
+console.groupCollapsed('palyginimai');
+console.log(10 > 3); // true
+console.log(10 < 3); // false
+console.log(10 <= 3); // false
+console.log(10 <= 10); // true
+console.log(10 >= 3); // true
+console.log(10 >= 10); // true
+console.log(10 == 10); // true
+console.log(10 != 10); // false
+console.log(10 === 10); // true
+console.log(10 !== 10); // false
+console.log(10 == '10'); // true
+console.log(10 === '10'); // false
 console.groupEnd();

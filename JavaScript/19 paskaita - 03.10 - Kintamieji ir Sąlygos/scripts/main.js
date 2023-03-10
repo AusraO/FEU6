@@ -131,8 +131,10 @@ if(amzius >= 18 && amzius < 65){
 console.log('toliau einantis kodas');
 console.groupEnd();
 
+console.groupCollapsed('truthy falsy');
 if(''){
   console.log('tiesa');
 } else {
   console.log('melas');
 }
+console.groupEnd();

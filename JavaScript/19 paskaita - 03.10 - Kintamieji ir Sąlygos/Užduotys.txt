@@ -16,27 +16,27 @@
   3.1) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį. (nesting)
   3.2) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį ir yra blaivas. (AND)
 
-2) Padaryti taip, kad puslapis su tavimi pasisveikintų, patikrintų kokiame mieste gyveni ir išvestų su tai susijusią info (pasakytų ką nors gražaus apie tavo miestą(galima tobulinti išskiriant keletą miestų, o ne išvedant tą pačią žinutę apie visus)).
+4) Padaryti taip, kad puslapis su tavimi pasisveikintų, patikrintų kokiame mieste gyveni ir išvestų su tai susijusią info (pasakytų ką nors gražaus apie tavo miestą(galima tobulinti išskiriant keletą miestų, o ne išvedant tą pačią žinutę apie visus)).
   Naudoti:
     1) let - kurti kintamuosius (objektus arba masyvus)
     optional) prompt - gauti tavo amžių (+ extra jei tobulini).
     2) alert/console.log - grąžintų atsakymus.
     3) if/elseIf/else - kas be ko...
 
-3) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
+5) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
   Naudoti:
     1) let - kurti kintamuosius (objektą/us)
     optional) prompt - vartotojas priskirtų objektui reikšmes
     2) alert/console.log - grąžintų atsakymus.
     3) if/elseIf/else - kas be ko...
 
-4) Parašyti if'ą, kuris tikrintų koks dabar mėnuo ir grąžintų koks yra metų laikas
+6) Parašyti if'ą, kuris tikrintų koks dabar mėnuo ir grąžintų koks yra metų laikas
   Naudoti:
     1) let - kurti kintamuosius.
     optional) prompt - gauti mėnesį / metų laiką.
     2) alert/console.log - grąžinti galimus atsakymus.
     3) if/elseIf/else - kas be ko...
-  4 extra) Google kaip veikia/atrodo/naudojamas switch'as ir užduotį atlikti su switch vietoj if.
+  6 extra) Google kaip veikia/atrodo/naudojamas switch'as ir užduotį atlikti su switch vietoj if.
 
 
 Extra) Padaryti taip, kad puslapis su tavimi pasisveikintu naudodamas teisingą galunę (ir tiktų ne tik tavo vardui, o visiem).

@@ -72,8 +72,8 @@ console.log(asmenys[0]);
 console.groupEnd();
 console.groupCollapsed('masyvas masyve');
 let masyvasMasyve = ['labas', 5, true, 'haha', 10, [5,1,'hihi',3,false], false];
-console.log(masyvasMasyve);
-console.log(masyvasMasyve[3]);
+console.log(masyvasMasyve, masyvasMasyve[2]);
+console.log(masyvasMasyve[5]);
 console.log(masyvasMasyve[5][2]);
 console.groupEnd();
 
@@ -138,3 +138,22 @@ if(''){
   console.log('melas');
 }
 console.groupEnd();
+
+/* Sąlygų užduotys */
+
+/* 3 */
+let turiVairuotojoTeises = 'Neturiu';
+// console.log(turiVairuotojoTeises);
+if(turiVairuotojoTeises === 'Turiu'){
+  console.log('Gali vairuoti');
+} else if(turiVairuotojoTeises === 'Neturiu'){
+  console.log('Negali vairuoti');
+}
+
+/* 5 */
+let objektasAsmuo = {
+  vardas: prompt('koks tavo vardas?'),
+  pavarde: "Banaitis",
+  amzius:26,
+  lytis:"vyras"
+};

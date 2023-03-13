@@ -141,13 +141,46 @@ console.groupEnd();
 
 /* Sąlygų užduotys */
 
+/* 1 */
+  // 4
+let objektasMasyve = [{},{},{}];
+  // 5
+let masyvasObjekte = {
+  ziema: ['Gruodis', 'Sausis', 'Vasaris'],
+  pavasaris: []
+}
+  // 6
+let objektasObjekte = {
+  vardas: 'Rokas',
+  lokacija: {
+    
+  },
+  hobiai: []
+}
+
+
+
 /* 3 */
-let turiVairuotojoTeises = 'Neturiu';
-// console.log(turiVairuotojoTeises);
+let turiVairuotojoTeises = 'Turiu';
+let turiAutomobili = 'Turiu';
+let arBlaivas = 'Taip';
 if(turiVairuotojoTeises === 'Turiu'){
-  console.log('Gali vairuoti');
+  console.log('Turi vairuotojo teises!');
+  if(turiAutomobili === 'Turiu' && arBlaivas === 'Taip'){
+    console.log('Turi automobilį ir esi blaivas.');
+  } else if(turiAutomobili === 'Neturi' && arBlaivas === 'Taip'){
+    console.log('Neturi automobilio, bet esi blaivas.');
+  } else if(turiAutomobili === 'Neturi' && arBlaivas === 'Ne'){
+    console.log('Neturi automobilio ir nesi blaivas.');
+  } else if(turiAutomobili === 'Turiu' && arBlaivas === 'Ne'){
+    console.log('Turi automobilio, bet nesi blaivas.');
+  } else {
+    console.log('Neteisinga įvestis');
+  }
 } else if(turiVairuotojoTeises === 'Neturiu'){
   console.log('Negali vairuoti');
+} else {
+  console.log('Neteisinga įvestis');
 }
 
 /* 5 */
@@ -157,3 +190,32 @@ let objektasAsmuo = {
   amzius:26,
   lytis:"vyras"
 };
+
+/* 6 */
+let menuo = 'Balandis';
+if(menuo === 'Kovas' || menuo === 'Balandis' || menuo === 'Gegužė'){
+  console.log('Pavasaris');
+}
+switch(menuo){
+  case "Kovas":
+  case "Balandis":
+  case 'Gegužė':
+    console.log('Pavasaris');
+    break;
+}
+
+// let menuo = 2;
+// if(menuo <= 0){
+//   console.log('Tokio mėnesio nėra');
+// } else if(menuo < 3 || menuo === 12){
+//   console.log('Žiema');
+// }
+// switch(menuo){
+//   case 12:
+//   case 1:
+//   case 2:
+//     console.log('Žiema');
+//     break;
+//   default:
+//     console.log('Tokio mėnesio nėra');
+// }

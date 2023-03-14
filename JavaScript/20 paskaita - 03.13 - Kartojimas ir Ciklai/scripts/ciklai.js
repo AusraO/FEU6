@@ -141,6 +141,7 @@ for(i = 0; i<3; i++){
 console.log(i);
 console.groupEnd();
 
+console.groupCollapsed('gyvunu masyvas');
 let gyvunuMasyvas = ['šunkiukas', 'šuniukas','katukas','ežiukas','katė','šuo','ryklys','begemotas','dramblys','liūtas','žirafa','zebras','krokodilas','aligatorius'];
 console.log(gyvunuMasyvas);
 // console.log(gyvunuMasyvas[1]);
@@ -164,3 +165,53 @@ console.log(gyvunuMasyvas);
 for(let i=4; i < gyvunuMasyvas.length; i+=3){ // i+=3 === i=i+3
   console.log(gyvunuMasyvas[i]);
 }
+console.groupEnd();
+
+
+/* 4 */
+// 4) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė didesnė negu 54.
+console.groupCollapsed('task4');
+let skaiciuMasyvas = [1,56,468,4,61,8984,6,16,46,13,1,321,54,1,16,51,0];
+for(let i = 0; i < skaiciuMasyvas.length; i++){
+  if(skaiciuMasyvas[i] > 54){
+    console.log(skaiciuMasyvas[i]);
+  }
+}
+console.groupEnd();
+console.groupCollapsed('task5_1');
+/* 5 */
+// let lyginiai = [];
+// let nelyginiai = [];
+for(let i = 0; i < skaiciuMasyvas.length; i++){
+  if(skaiciuMasyvas[i] % 2 === 0){
+    console.log(`Skaičius ${skaiciuMasyvas[i]} yra lyginis`);
+    // lyginiai.push(skaiciuMasyvas[i]);
+  }
+}
+console.groupEnd();
+console.groupCollapsed('task5_2');
+for(let i = 0; i < skaiciuMasyvas.length; i++){
+  if(skaiciuMasyvas[i] % 2 === 1){
+    console.log(`Skaičius ${skaiciuMasyvas[i]} yra nelyginis`);
+    // nelyginiai.push(skaiciuMasyvas[i]);
+  }
+}
+console.groupEnd();
+
+/* fizzBuzz */
+// for(let i = 0; i < 100; i++){
+//   /*
+//     % 3*5 - fizzBuzz
+//     % 3 - fizz
+//     % 5 - buzz
+//     else
+//   */
+// }
+
+/* pirminiai */
+// for(let i = 2; i < 100; i++){
+//   /*
+//     prielaida, kad i yra pirminis
+//     irodai, kad i nėra pirminis sukdamas dar vieną ciklą ir tikrindamas ar i dalinasi be liekanos bent iš vieno iki jo einančių skaičių
+//   */
+// }

@@ -45,10 +45,90 @@ function task2_3(masyvas){
 task2_3(kazkoksMasyvas);
 console.groupEnd();
 
+console.groupCollapsed('task11');
+/* 11 */
+/*
+  Math.random()                 => 0.00000000001 -> 0.9999999999999
+  Math.random() * 10            => 0.00000000010 -> 9.9999999999990
+  Math.ceil(Math.random() * 10) => 1 -> 10 // apvalina į didesnį sveikąjį skaičių
+  Math.floor() // apvalina į mažesnį sveikąjį skaičių
+  Math.round() // apvalina pagal apvalinimo taisykles iki sveikojo skaičiaus
+  number.toFixed(skaicius) // apvalina number'į iki nurodyto skaičiaus už kablelio
+    pvz.: 9.55149.toFixed(3) => 9.551
+    pvz.: 9.55150.toFixed(3) => 9.552
+*/
+// vienas būdas
+function randomas() {
+  return Math.ceil(Math.random() * 10);
+}
+function kvadratu(){
+  return randomas()**2;
+}
+console.log(kvadratu());
+// kitas būdas
+function kelimasKvadratu(sk){
+  return sk**2;
+}
+console.log(kelimasKvadratu(randomas()));
+console.log(kelimasKvadratu(5));
+console.groupEnd();
 
-/* fizzBuzz funkcija */
-function fizzBuzz(sk1, sk2){
-  
+console.groupCollapsed('FizzBuzz');
+/* FizzBuzz funkcija */
+function fizzBuzz(nuo, iki){
+  // console.log(nuo, iki);
+  // if(typeof(nuo)!=='number' && typeof(iki)!=='number'){
+  if(isNaN(nuo) || isNaN(iki)){
+    return 'Klaida - duomenys turi būti skaičiai!';
+  }
+  const atsakymas = [];
+  for(let i = nuo; i <= iki; i++){
+    // console.log(i);
+    if(i === 0){
+      atsakymas.push(i);
+    } else if(i % 3 === 0 && i % 5 === 0){ // i%(3*5) === 0
+      atsakymas.push('FizzBuzz');
+    } else if(i % 3 === 0){
+      atsakymas.push('Fizz');
+    } else if(i % 5 === 0){
+      atsakymas.push('Buzz');
+    } else {
+      atsakymas.push(i);
+    }
+  }
+  return atsakymas;
 }
 
-fizzBuzz(0, 100);
+// console.log(fizzBuzz(1,106));
+let fizzBuzzAtsakymas = fizzBuzz(1,106);
+console.log(fizzBuzzAtsakymas);
+console.groupEnd();
+
+/* Pirminių skaičių funkcija */
+function pirminiaiSkaiciai(nuo, iki){
+  // let functionStartTime = Date.now();
+  console.time();
+  let pirminiuSkaiciuMasyvas = [];
+  for(let i = nuo; i <= iki; i++){
+    let arPirminis = true; // prielaida, kad i'tasis yra pirminis skaičius
+    for(let j = 2; j < i; j++){
+      if(i % j === 0){
+        arPirminis = false;
+        break;
+      }
+    }
+    if(arPirminis){
+      // console.log(i, ' yra pirminis skaičius');
+      pirminiuSkaiciuMasyvas.push(i);
+    }
+  }
+  console.timeEnd();
+  return pirminiuSkaiciuMasyvas;
+  // let functionEndTime = Date.now();
+  // console.log(functionEndTime - functionStartTime, 'miliseconds');
+}
+
+let pirminiuSkaiciuAtsakymas = pirminiaiSkaiciai(2,10000);
+console.log(pirminiuSkaiciuAtsakymas);
+
+// ND - pabandyti optimizuoti pirminiaiSkaiciai funkciją

@@ -43,7 +43,12 @@ document
 function sudetiesFormosFunkcija(event){
   event.preventDefault();
   console.log(event);
+  // console.log(event.target[0]);
+  // console.log(event.target[1]);
+  // console.log(event.target.pirmasSudetiesDomuo);
+  // console.log(event.target.elements[0]);
   let pirmasDomuo = event.target.elements.pirmasSudetiesDomuo.valueAsNumber;
+  // let pirmasDomuoBad = event.target.pirmasSudetiesDomuo.valueAsNumber;
   let antrasDomuo = event.target.elements.antrasSudetiesDomuo.valueAsNumber;
   console.log(pirmasDomuo, antrasDomuo);
   document.querySelector('#sudetiesAts').textContent = pirmasDomuo+antrasDomuo;

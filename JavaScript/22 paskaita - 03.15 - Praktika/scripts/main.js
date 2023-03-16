@@ -105,13 +105,44 @@ console.log(fizzBuzzAtsakymas);
 console.groupEnd();
 
 /* Pirminių skaičių funkcija */
+// function pirminiaiSkaiciai(nuo, iki){
+//   // let functionStartTime = Date.now();
+//   if(isNaN(nuo) || isNaN(iki)){
+//     return 'Klaida - duomenys turi būti skaičiai!';
+//   }
+//   if(nuo < 2 || iki < nuo){
+//     return 'Klaida - duomenys turi būti didesni už 2!';
+//   }
+//   console.time();
+//   let pirminiuSkaiciuMasyvas = [2];
+//   for(let i = 2; i <= iki; i++){
+//     let arPirminis = true; // prielaida, kad i'tasis yra pirminis skaičius
+//     // for(let j = 2; j <= i/2; j++){
+//     for(let j = 0; j < pirminiuSkaiciuMasyvas.length; j++){
+//       if(i % pirminiuSkaiciuMasyvas[j] === 0){
+//         arPirminis = false;
+//         break;
+//       }
+//     }
+//     if(arPirminis){
+//       // console.log(i, ' yra pirminis skaičius');
+//       pirminiuSkaiciuMasyvas.push(i);
+//     }
+//   }
+//   console.timeEnd();
+
+//   return pirminiuSkaiciuMasyvas;
+//   // let functionEndTime = Date.now();
+//   // console.log(functionEndTime - functionStartTime, 'miliseconds');
+// }
+
 function pirminiaiSkaiciai(nuo, iki){
   // let functionStartTime = Date.now();
   console.time();
   let pirminiuSkaiciuMasyvas = [];
   for(let i = nuo; i <= iki; i++){
     let arPirminis = true; // prielaida, kad i'tasis yra pirminis skaičius
-    for(let j = 2; j < i; j++){
+    for(let j = 2; j <= Math.sqrt(i); j++){
       if(i % j === 0){
         arPirminis = false;
         break;
@@ -128,7 +159,14 @@ function pirminiaiSkaiciai(nuo, iki){
   // console.log(functionEndTime - functionStartTime, 'miliseconds');
 }
 
-let pirminiuSkaiciuAtsakymas = pirminiaiSkaiciai(2,10000);
+let pirminiuSkaiciuAtsakymas = pirminiaiSkaiciai(2,1000000);
 console.log(pirminiuSkaiciuAtsakymas);
 
 // ND - pabandyti optimizuoti pirminiaiSkaiciai funkciją
+/*
+  break;
+  for(let j = 2; j <= i/2; j++){
+  for(let j = 2; j <= Math.sqrt(i); j++){
+  lyginiai/nelyginiai?
+
+*/

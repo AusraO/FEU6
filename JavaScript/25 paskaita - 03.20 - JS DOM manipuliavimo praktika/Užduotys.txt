@@ -19,3 +19,6 @@
 5 extra) Padaryti formą, kurioje įvedus duomenis (iki) ir paspaudus mygtuką "vykdyti", žemiau būtų sukurta grupė div'ų, kuriuose yra rasti pirminiai skaičiai iki duotojo parametro. Viską gražiai stilizuoti.
 
 6 extra) Sukurti funkcionalumą, kuris slėptų/rodytų sekcijose atvaizduojamą informaciją. (žiūrėti paveikslėlį images/hideShow.PNG) (querySelectorAll - grąžina "masyvą" -> kurti button -> suteikti funkcionalumą)
+
+7 EXTRA EXTRA) Sukurti formą, kurioje įvedus duomenis (iki) ir paspaudus mygtuką "vykdyti", žemiau būtų sukurtas canvas'as, kurio viduje būtų atvaizduojama Ulam Spiral of Prime Numbers.
+	Video kaip tai padaryti: https://youtu.be/a35KWEjRvc0

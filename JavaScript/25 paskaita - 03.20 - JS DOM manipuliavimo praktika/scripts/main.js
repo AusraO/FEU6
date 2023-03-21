@@ -104,3 +104,39 @@ for(let i = 0; i < duomenys.length; i++){
   divKonteineris.appendChild(kortelesDiv);
 }
 kartu2.append(kartu2Heading, divKonteineris);
+
+/* 6 */
+const allSections = document.querySelectorAll('section');
+console.log(allSections);
+for(let i = 0; i < allSections.length; i++){
+  const rodytiSleptiMygtukas = document.createElement('button');
+  const mygtukoTekstas = document.createTextNode('Slėpti');
+  rodytiSleptiMygtukas.appendChild(mygtukoTekstas);
+  rodytiSleptiMygtukas.classList.add('absolute', 'rodytiSleptiMygtukas');
+  rodytiSleptiMygtukas.style.top = '0';
+  rodytiSleptiMygtukas.style.right = '0';
+  rodytiSleptiMygtukas.addEventListener('click', rodytiSlepti);
+  console.dir(rodytiSleptiMygtukas);
+  allSections[i].appendChild(rodytiSleptiMygtukas);
+  // allSections[i].style.position = 'relative';
+  allSections[i].classList.add('relative');
+}
+
+function rodytiSlepti(event){
+  // console.log(event);
+  let visiElementaiApartMygtuko = event.target.parentNode.querySelectorAll('section>:not(button.rodytiSleptiMygtukas)');
+  // console.log(visiElementaiApartMygtuko);
+  if(event.target.innerHTML === 'Slėpti'){
+    for(let i = 0; i < visiElementaiApartMygtuko.length; i++){
+      visiElementaiApartMygtuko[i].style.display = 'none';
+    }
+    event.target.innerHTML = 'Rodyti';
+  } else if(event.target.innerHTML === 'Rodyti'){
+    for(let i = 0; i < visiElementaiApartMygtuko.length; i++){
+      visiElementaiApartMygtuko[i].style.display = '';
+    }
+    event.target.innerHTML = 'Slėpti';
+  } else {
+    console.log('Įvyko klaida...');
+  }
+}

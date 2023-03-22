@@ -26,3 +26,52 @@ console.log(entriesMasyvas1.next());
 // masyvas.pop();
 // masyvas.pop();
 // console.log(masyvas);
+
+
+//        Funkcijos
+function f_Vardas(par1, par2){
+  return par1 + par2;
+}
+console.log(f_Vardas(5,4));
+
+const masyvasNeFunkcijos = ['a','b','c','d'];
+function masyvas_i_string(masyvas){
+  console.log('funkcija vyksta');
+  return masyvas.join('; ');
+}
+let fAtsakymas = masyvas_i_string(masyvasNeFunkcijos);
+console.log(fAtsakymas);
+
+//        callbacks
+function rikiuotiSkaicius(sk1, sk2){
+  return sk1 - sk2;
+}
+const nerikiuotasMasyvas = [5,541,651,1,651,35,16,84,61,64,56561,61,8,16,1];
+let rikiuotasMasyvas = nerikiuotasMasyvas.sort(rikiuotiSkaicius);
+console.log(rikiuotasMasyvas);
+
+//        arrow function
+const arrowFunkcija = (par1, par2) => {
+  return par1*par2;
+}
+let afAtsakymas = arrowFunkcija(5,10);
+console.log(afAtsakymas);
+
+//        bevardės funkcijos
+(function(par1, par2){
+  return par1+'atlikus veiksmus'+par2;
+})
+((par1, par2) => {
+  return par1+'atlikus veiksmus'+par2;
+})
+// ((par1, par2) => par1+'atlikus veiksmus'+par2)
+// (parametras => parametras+'atlikus veiksmus')
+
+//        Arrow function event'e
+
+document
+  .querySelector('button')
+  .addEventListener('click', (event) => {
+    console.log(event);
+    event.target.innerHTML = 'Paspaudei!';
+  })

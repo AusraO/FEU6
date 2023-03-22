@@ -1,0 +1,31 @@
+1 savaitė:
+  Kovo 07 - Pasiruošimas HTML ir CSS atsiskaitymui
+  Kovo 08 - HTML ir CSS atsiskaitymas
+  Kovo 09 - JS Įvadas
+  Kovo 10 - JS kintamieji ir sąlygos
+2 savaitė:
+  Kovo 13 - Ciklai
+  Kovo 14 - Funkcijos
+  Kovo 15 - Praktika su funkcijomis
+  Kovo 16 - Formos valdymas su JS
+  Kovo 17 - HTML elementų kūrimas su JS (simple (inner HTML))
+3 savaitė:
+  Kovo 20 - JS DOM manipuliavimo praktika (createElement...)
+  Kovo 21 - Primityvių duomenų tipų metodai
+  Kovo 22 - Masyvų metodai ir callback bei arrow function
+  Kovo 23 - Iteraciniai masyvų metodai ir destruktūrizavimas
+  Kovo 24 - Metodų praktika
+4 savaitė: Klasės, Komponentai (ne react), moduliai, ToDoApp(simple), Async
+  Kovo 27
+  Kovo 28
+  Kovo 29
+  Kovo 30
+  Kovo 31
+5 savaitė: Fetch ir Local/Session/Cookie, Fetch Metodai, JSON server, CRUD
+  Balandžio 03
+  Balandžio 04
+  Balandžio 05
+  Balandžio 06
+  Balandžio 07
+6 savaitė:
+  Balandžio 11 - JS atsiskaitymas

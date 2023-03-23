@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masyvų iteraciniai metodai IR destruktūrizavimas IR sąlygos(advanced)</title>
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+  <!-- (forEach, filter, map, reduce, 
+    reduceRight, some, every, flatMap, find, findIdex, findLast, findLastIndex) -->
+    <main>
+      <section id="forEach">
+        <h1>ForEach</h1>
+        <h3>Syntax:</h3>
+        <p>
+          forEach( (element) => { veiksmai... } )
+          forEach( (element, i) => { veiksmai... } )
+          forEach( (element, i, array) => { veiksmai... } )
+        </p>
+        <p>
+          ForEach metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu atlieka kažkokius veiksmus su tos iteracijos masyvo elementu (masyvas[i] elementu).
+          ForEach'as negali grąžinti reikšmės (neturi return).
+        </p>
+      </section>
+      <section id="filter">
+        <h1>Filter</h1>
+        <h3>Syntax:</h3>
+        <p>
+          filter( (element) => { veiksmai... } )
+          filter( (element, i) => { veiksmai... } )
+          filter( (element, i, array) => { veiksmai... } )
+        </p>
+        <p>
+          Filter metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas (masyvas[i] elementas) tenkina sąlygą. Jeigu elementas sąlygą tenkina - elementas yra grąžinamas, jeigu ne - negrąžinamas.
+        </p>
+      </section>
+      <section id="map">
+        <h1>Map</h1>
+        <h3>Syntax:</h3>
+        <p>
+          map( (element) => { veiksmai... } )
+          map( (element, i) => { veiksmai... } )
+          map( (element, i, array) => { veiksmai... } )
+        </p>
+        <p>
+          Map metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu kažkaip mutuoja kiekvieną iteracijos masyvo elementą (masyvas[i] elementą) ir jį grąžina.
+        </p>
+      </section>
+      <section id="reduce">
+        <h1>Reduce</h1>
+        <h3>Syntax:</h3>
+        <p>
+          reduce( (accumulator, currentValue) => { veiksmai... } )
+          reduce( (accumulator, currentValue, i) => { veiksmai... } )
+          reduce( (accumulator, currentValue, i, array) => { veiksmai... } )
+          
+          reduce( (accumulator, currentValue) => { veiksmai... }, initialValue )
+          reduce( (accumulator, currentValue, i) => { veiksmai... }, initialValue )
+          reduce( (accumulator, currentValue, i, array) => { veiksmai... }, initialValue )
+        </p>
+        <p>
+          Reduce metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu su akumuliatoriaus (reikšmė, kurią grąžino praeitas ciklas) (accumulator) atlieka kažkokį veiksmą, naudodamas šios iteracijos masyvo elementą (masyvas[i] elementą) (currentValue). Metodo gale, grąžina vieną reikšmę (visų masyvo elementų rezultatą).
+          Jeigu yra nurodyta pradinė reikšmė (initialValue), tuomet pirmosios iteracijos metu yra atliekami veiksmai su pradine reikšme (initialValue) ir pirmuoju masyvo elementu.
+          Jeigu nėra nurodyta pradinė reikšmė (initialValue), tuomet pirmosios iteracijos metu yra atliekami veiksmai su pirmąja masyvo reikšme ir antrąja masyvo reikšme.
+        </p>
+      </section>
+    </main>
+</body>
+</html>

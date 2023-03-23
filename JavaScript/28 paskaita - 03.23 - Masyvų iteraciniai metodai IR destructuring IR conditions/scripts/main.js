@@ -85,3 +85,19 @@ let reduceSu = masyvas.reduce( (acc, curr) => {
 }, 'pradine reikšmė: ');
 console.log(reduceSu);
 console.groupEnd();
+
+//      Some
+console.group('Some');
+let someAts = masyvas.some( (letter) => {
+  return letter === letter.toUpperCase();
+} );
+console.log('Ar bent viena raidė yra didžioji?', someAts);
+console.groupEnd();
+
+//      Every
+console.group('Every');
+let everyAts = masyvas.every( (letter) => {
+  return letter === letter.toLowerCase();
+});
+console.log('Ar visos raidės yra mažosios?', everyAts);
+console.groupEnd();

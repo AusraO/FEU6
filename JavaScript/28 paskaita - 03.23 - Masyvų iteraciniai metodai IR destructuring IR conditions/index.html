@@ -8,8 +8,6 @@
   <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-  <!-- (forEach, filter, map, reduce, 
-    reduceRight, some, every, flatMap, find, findIdex, findLast, findLastIndex) -->
     <main>
       <section id="forEach">
         <h1>ForEach</h1>
@@ -65,6 +63,71 @@
           Jeigu yra nurodyta pradinė reikšmė (initialValue), tuomet pirmosios iteracijos metu yra atliekami veiksmai su pradine reikšme (initialValue) ir pirmuoju masyvo elementu.
           Jeigu nėra nurodyta pradinė reikšmė (initialValue), tuomet pirmosios iteracijos metu yra atliekami veiksmai su pirmąja masyvo reikšme ir antrąja masyvo reikšme.
         </p>
+      </section>
+      <section id="reduceRight">
+        <h1>ReduceRight</h1>
+        <p>
+          Lygiai tas pats kas ir reduce, tik kad iš kito galo (right-to-left(rtl)). 
+        </p>
+      </section>
+      <section id="flatMap">
+        <h1>FlatMap</h1>
+        <p>
+          Apjungtas flat(1) ir map metodai į vieną. Neturi galimybės keisti flat'o gylio.
+        </p>
+      </section>
+      <section id="some">
+        <h1>Some</h1>
+        <p>
+          Some metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar bent vienas iteracijos masyvo elementas atitinka nurodytą sąlygą. 
+          Jeigu bent vienas elementas atitinka nurodytą sąlygą - metodas grąžina - true.
+          Jeigu nei vienas elementas neatitinka nurodytos sąlygos - metodas grąžina - false;
+        </p>
+      </section>
+      <section id="every">
+        <h1>Every</h1>
+        <p>
+          Every metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar kiekvienas iteracijos masyvo elementas atitinka nurodytą sąlygą.
+          Jeigu kiekvienas elementas atitinka nurodytą sąlygą - metodas grąžina - true.
+          Jei bent vienas elementas neatitinka nurodytos sąlygos - metodas grąžina - false.
+        </p>
+      </section>
+      <section id="find">
+        <h1>Find</h1>
+        <p>
+          Find metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas atitinka nurodytą sąlygą.
+          Jeigu iteracijos masyvo elementas atitinka nurodytą sąlygą - grąžina elementą.
+          Jeigu iteracijos masyvo elementas neatitinka nurodytos sąlygos - juda prie sekančios iteracijos.
+          Jeigu po viso masyvo iteracijų nėra randamas elementas atitinkantis nurodytos sąlygos - grąžina undefined.
+        </p>
+      </section>
+      <section id="findLast">
+        <h1>Find Last</h1>
+        <p>
+          Atlieka tą patį ką ir find metodas, tik nuo kito galo. (right-to-left (rtl))
+        </p>
+      </section>
+      <section id="findIndex">
+        <h1>Find Index</h1>
+        <p>
+          FindIndex metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar iteracijos masyvo elementas atitinka nurodytą sąlygą.
+          Jeigu iteracijos masyvo elementas atitinka nurodytą sąlygą - grąžina elemento indeksą.
+          Jeigu iteracijos masyvo elementas neatitinka nurodytos sąlygos - juda prie sekančios iteracijos.
+          Jeigu po viso masyvo iteracijų nėra randamas elementas atitinkantis nurodytos sąlygos - grąžina -1.
+        </p>
+      </section>
+      <section id="findLastIndex">
+        <h1>Find Last Index</h1>
+        <p>
+          Atlieka tą patį ką ir findIndex metodas, tik nuo kito galo. (right-to-left (rtl))
+        </p>
+      </section>
+
+      <section id="imantriuSalygu">
+        
+      </section>
+      <section id="destrukturizavimas">
+
       </section>
     </main>
 </body>

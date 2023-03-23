@@ -15,7 +15,7 @@
   Kovo 22 - Masyvų metodai ir callback bei arrow function
   Kovo 23 - Iteraciniai masyvų metodai ir destruktūrizavimas
   Kovo 24 - Metodų praktika
-4 savaitė: Klasės, Komponentai (ne react), moduliai, ToDoApp(simple), Async
+4 savaitė: Git ir GitHub, Klasės, Komponentai (ne react), moduliai, ToDoApp(simple), Async
   Kovo 27
   Kovo 28
   Kovo 29

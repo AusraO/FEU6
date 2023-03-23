@@ -75,3 +75,11 @@ document
     console.log(event);
     event.target.innerHTML = 'Paspaudei!';
   })
+
+//      9
+
+const rastiPasikartojanciusVisur = (...masyvai) => {
+  console.log(masyvai[0]);
+}
+
+rastiPasikartojanciusVisur('vienas', 'kitas', 'trecias', 'ketvirtas');

@@ -13,7 +13,7 @@
   Kovo 20 - JS DOM manipuliavimo praktika (createElement...)
   Kovo 21 - Primityvių duomenų tipų metodai
   Kovo 22 - Masyvų metodai ir callback bei arrow function
-  Kovo 23 - Iteraciniai masyvų metodai ir destruktūrizavimas
+  Kovo 23 - Iteraciniai masyvų metodai ir destruktūrizavimas ir conditions(? : ir &&)
   Kovo 24 - Metodų praktika
 4 savaitė: Git ir GitHub, Klasės, Komponentai (ne react), moduliai, ToDoApp(simple), Async
   Kovo 27

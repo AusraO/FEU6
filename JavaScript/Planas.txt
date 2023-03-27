@@ -15,13 +15,13 @@
   Kovo 22 - Masyvų metodai ir callback bei arrow function
   Kovo 23 - Iteraciniai masyvų metodai ir destruktūrizavimas ir conditions(? : ir &&)
   Kovo 24 - Metodų praktika
-4 savaitė: Git ir GitHub, Klasės, Komponentai (ne react), moduliai, ToDoApp(simple), Async
-  Kovo 27
-  Kovo 28
-  Kovo 29
+4 savaitė: Git ir GitHub, Klasės, moduliai, Komponentai (ne react), ToDoApp(simple), Async
+  Kovo 27 - Git ir GitHub IR Klasės
+  Kovo 28 - Klasės ir moduliai
+  Kovo 29 - Komponentai
   Kovo 30
   Kovo 31
-5 savaitė: Fetch ir Local/Session/Cookie, Fetch Metodai, JSON server, CRUD
+5 savaitė: Fetch ir Local/Session/Cookie, Fetch Metodai, JSON server, CRUD, CRUD praktika
   Balandžio 03
   Balandžio 04
   Balandžio 05

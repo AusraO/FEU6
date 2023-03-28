@@ -134,3 +134,36 @@ carsObjects.forEach(car => {
     </div>
   `;
 });
+
+document.querySelector('#newCars>form').addEventListener('submit', e => {
+  e.preventDefault();
+  console.log(e);
+  console.log(e.target.elements);
+  let car = {
+    make: e.target.elements.make.value,
+    model: e.target.elements.model.value,
+    year: e.target.elements.year.valueAsNumber,
+    basePrice: e.target.elements.basePrice.valueAsNumber,
+    engineType: e.target.elements.engineType.value,
+    photo: e.target.elements.photo.value
+  };
+  console.log(car);
+  const coolCar = new Car(car);
+  console.log(coolCar);
+  document.querySelector('#allCars').innerHTML += `
+    <div class="car">
+      <h1>${coolCar.getMake()} ${coolCar.getModel()}</h1>
+      <img src="${coolCar.getPhoto()}" alt="${coolCar.getMake()} ${coolCar.getModel()} photo">
+      <div class="carSpecs">
+        <div>
+          <p>YoM: ${coolCar.getYear()}</p>
+          <p>Engine: ${coolCar.getEngineType()}</p>
+          <p>Color: <span style="background-color:${coolCar.getColor()}"></span></p>
+        </div>
+        <div>
+          <p>Price: ${coolCar.getPrice()} &euro;</p>
+        </div>
+      </div>
+    </div>
+  `;
+});

@@ -167,3 +167,34 @@ document.querySelector('#newCars>form').addEventListener('submit', e => {
     </div>
   `;
 });
+
+class Rectangle{
+  constructor(width, height){
+    this.width = width;
+    this.height = height;
+    this.color = `#${Math.floor(Math.random()*16777256).toString(16)}`
+  }
+  area(){
+    return this.width * this.height;
+  }
+  perimeter(){
+    return this.width*2 + this.height*2;
+  }
+}
+
+class Point3D{
+  constructor(x, y, z){
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+  distance(point){
+    return Math.hypot(this.x-point.x, this.y-point.y, this.z-point.z);
+  }
+}
+
+const points3D = [
+  new Point3D(0, 0, 0),
+  new Point3D(10, 10, 3)
+];
+console.log(points3D[0].distance(points3D[1]));

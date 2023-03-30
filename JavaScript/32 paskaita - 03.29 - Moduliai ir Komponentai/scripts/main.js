@@ -3,6 +3,7 @@ import mumboJumbo, { kita } from './randomColor.js';
 import P from './paragraph.js';
 import H from './heading.js';
 import Card from './card.js';
+import List from './list.js';
 
 console.groupCollapsed('moduliai');
 kita();kita();kita();kita();kita();
@@ -41,4 +42,26 @@ const card0 = new Card({
   }
 });
 
-testSection.append(heading0, paragrafas0, paragrafas1, heading1, card0);
+const sarasas0 = new List({
+  listType: 'ol',
+  listClass: ['vienaKlase', 'kitaKlase'],
+  // typeAttribute: 'A',
+  listItemsClass: ['liKlase', 'ho', 'kek'],
+  listItems: [
+    {
+      text: 'Pirmas'
+    },{
+      text: 'Antras'
+    },{
+      text: 'Ne Pirmas',
+      class: ['unikaliKlase']
+    },{
+      text: 'Kažkelintas',
+      class: ['unikaliKlase', 'hi']
+    },{
+      text: 'Paskutinis maybe'
+    }
+  ]
+});
+
+testSection.append(heading0, paragrafas0, paragrafas1, heading1, card0, sarasas0);

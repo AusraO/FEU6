@@ -60,3 +60,33 @@ const duomenys = {
 window.localStorage.setItem('duomenys', JSON.stringify(duomenys));
 console.log(window.localStorage.getItem('duomenys'));
 console.log(JSON.parse(window.localStorage.getItem('duomenys')).asmenys);
+
+//            Node Elementai
+const nodeSekcija = document.querySelector('#nodeElements');
+let divas = document.createElement('div');
+divas.classList.add('kortele', 'remeliai');
+nodeSekcija.appendChild(divas);
+let heading = document.createElement('h1');
+divas.appendChild(heading);
+let textPavadinimas = document.createTextNode('Pavadinimas');
+heading.appendChild(textPavadinimas);
+console.dir(divas);
+heading.addEventListener('click', () => {
+  // heading.classList.toggle('redBg');
+  if(heading.classList.contains('redBg')){
+    heading.classList.remove('redBg');
+    console.log('atėmiau fono spalvą');
+  } else if(!heading.classList.contains('redBg')){
+    heading.classList.add('redBg');
+    console.log('pridėjau fono spalvą');
+  }
+});
+let trinimoMygtukas = document.createElement('button');
+divas.appendChild(trinimoMygtukas);
+let trinimoMygtukoTekstas = document.createTextNode('Trinti');
+trinimoMygtukas.appendChild(trinimoMygtukoTekstas);
+trinimoMygtukas.addEventListener('click', (e) => {
+  // divas.remove();
+  e.target.parentElement.remove();
+  console.log('Sunaikinau div kortele MUHAHAHAHA!!!');
+});

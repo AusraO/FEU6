@@ -19,8 +19,8 @@
   Kovo 27 - Git ir GitHub IR Klasės
   Kovo 28 - Klasės
   Kovo 29 - Moduliai ir Komponentai (ne react)
-  Kovo 30 - TodoApp (simple) ir Local/Session/Cookie
-  Kovo 31
+  Kovo 30 - Komponentai (ne react) ir Local/Session/Cookie
+  Kovo 31 - TodoApp (simple)
 5 savaitė:  Async, Fetch, Fetch Metodai, JSON server, CRUD, CRUD praktika
   Balandžio 03
   Balandžio 04

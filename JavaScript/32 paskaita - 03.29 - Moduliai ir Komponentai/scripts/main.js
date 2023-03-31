@@ -64,4 +64,92 @@ const sarasas0 = new List({
   ]
 });
 
+const table0 = {
+  attributes: [
+    {
+      name: "id",
+      values: ['idVardas']
+    },{
+      name: "class",
+      values: ["vienaKlase", 'kitaKlase']
+    }
+  ],
+  /*thead:[ // daug lankstumo, bet ilgas
+
+  ],
+  tbody:[ 
+    [
+      {
+        data: "Rokas"
+      },{
+        data: "Banaitis"
+      },{
+        data: 26
+      }
+    ],[
+      {
+        data: "Petras"
+      },{
+        data: "Petrauskas"
+      },{
+        data: 55
+      }
+    ]
+  ]*/
+  /*tbody:[ // mažai lankstumo, bet trumpas
+    {
+      vardas: "Rokas",
+      pavarde: "Banaitis",
+      amzius: 26
+    },{
+      vardas: "Petras",
+      pavarde: "Petrauskas",
+      amzius: 55
+    }
+  ]*/
+}
+console.log(table0);
+
+// const el = {
+//   name: 'div',
+//   attributes: [],
+//   childrenElements:[
+//     {
+//       name: 'div',
+//       attributes: [],
+//       childrenElements:[
+//         {
+//           name: 'h1',
+//           attributes: [],
+//           textNode: 'some text'
+//         },{
+//           name: 'img',
+//           attributes: []
+//         },{
+//           name: 'p',
+//           attributes: [],
+//           textNode: 'some text'
+//         }
+//       ]
+//     },{
+//       name: 'div',
+//       attributes: [],
+//       childrenElements:[
+//         {
+//           name: 'h1',
+//           attributes: [],
+//           textNode: 'some text'
+//         },{
+//           name: 'img',
+//           attributes: []
+//         },{
+//           name: 'p',
+//           attributes: [],
+//           textNode: 'some text'
+//         }
+//       ]
+//     }
+//   ]
+// }
+
 testSection.append(heading0, paragrafas0, paragrafas1, heading1, card0, sarasas0);
